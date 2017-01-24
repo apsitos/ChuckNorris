@@ -9,8 +9,8 @@ const logStuff = () => {
 
 const Header = () => {
   return (
-    <div className="Header">
-      <h1>Header</h1>
+    <div className="header">
+      <h1>Chuck Norris Joke Machine</h1>
       <Button handleClick={() => logStuff()} />
     </div>
   );

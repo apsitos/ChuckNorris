@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import Button from './components/Button/Button';
+import Random from './components/Random/Random'
 import Jokes from './components/Jokes/Jokes';
 
 export default class Main extends React.Component {
@@ -15,7 +15,7 @@ export default class Main extends React.Component {
     return(
       <div>
         <Header />
-        <
+        <Random />
         <Jokes />
       </div>
     )

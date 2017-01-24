@@ -1,12 +1,10 @@
 @import '../../styles';
 
-// $font: "Arial";
-
-body {
-  background: $body-color;
-  color: $text-color;
+.header {
+  background-color: $header-color;
 }
 
 h1 {
   font-family: $header-font;
+  color: $text-color;
 }
