@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './styles';
-import Header from './components/Header/Header'
+require('./styles');
+import Main from './Main';
 
-
-render(<Main/>, document.querySelector('.application'));
+render(<Main/>, document.getElementById('application'));
