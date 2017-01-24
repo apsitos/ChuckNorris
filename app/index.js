@@ -4,4 +4,4 @@ import './styles';
 import Header from './components/Header/Header'
 
 
-render(<Header/>, document.querySelector('.application'));
+render(<Main/>, document.querySelector('.application'));
