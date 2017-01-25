@@ -1,0 +1,13 @@
+@import '../../styles';
+
+#random {
+  font-family: $body-font;
+  font-size: 14px;
+  border: 1px dotted white;
+  height: 100px;
+  width: 80%;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

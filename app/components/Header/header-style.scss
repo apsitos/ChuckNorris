@@ -1,12 +1,19 @@
 @import '../../styles';
 
-// $font: "Arial";
-
-body {
-  background: $body-color;
-  color: $text-color;
+#header {
+  background-color: $header-color;
+  width: 98%;
+  height: 50%;
 }
 
 h1 {
   font-family: $header-font;
+  font-size: 50px;
+  color: $text-color;
+  text-align: center;
+}
+
+#settings {
+  border-radius: 50%;
+  background-color: $button-color;
 }
