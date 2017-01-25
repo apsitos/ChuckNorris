@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default class Joke extends React.Component {
-  render() {
-    return(
-      <div>
-        See a funny.
-      </div>
-    )
-  }
+const Joke = () => {
+  return(
+    <div>
+      See a funny.
+    </div>
+  )
 }
+
+export default Joke;
