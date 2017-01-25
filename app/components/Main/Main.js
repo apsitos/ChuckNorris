@@ -33,9 +33,11 @@ export default class Main extends React.Component {
         <Header />
         <Random joke={this.state.joke}/>
         <Link to='/jokes'>
-          <Button id='retrieve' handleClick={this.handleClick.bind(this)}>Get Jokes</Button>
+          <Button id='retrieve' handleClick={this.handleClick.bind(this)} name='Get Jokes'/>
         </Link>
-        {this.props.children}
+        <div>
+          {this.props.children}
+        </div>
       </div>
     )
   }
