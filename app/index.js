@@ -11,7 +11,7 @@ import { Router, browserHistory, Route, IndexRoute } from 'react-router';
 render(
   <Router history={browserHistory}>
     <Route path="/" component={Main}>
-      <IndexRoute to="/home" component={Initial}/>
+      <IndexRoute component={Initial}/>
       <Route component={Initial}/>
       <Route path="/jokes" component={Joke} />
         {/* <IndexRoute component={Joke} /> */}
