@@ -3,7 +3,7 @@ import './button-style';
 
 const Button = (props) => {
   return (
-    <button onClick={() => props.handleClick()}></button>
+    <button onClick={() => props.handleClick()}>{props.name}</button>
   );
 }
 
