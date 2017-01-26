@@ -3,7 +3,6 @@ import Joke from './Joke';
 require('./joke-style');
 
 const Jokes = (props) => {
-  //bring jokeArray down as a prop from state above = use React.cloneElement?
   // <Joke handleClick = props.handleClick />
   return(
     <div>
