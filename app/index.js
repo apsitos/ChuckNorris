@@ -7,13 +7,14 @@ import Joke from './components/Jokes/Jokes';
 // import Favorites from './components/Favorites/Favorites';
 import { Router, browserHistory, Route, IndexRoute } from 'react-router';
 
-// require('./styles');
 
 render(
   <Router history={browserHistory}>
     <Route path="/" component={Main}>
       <IndexRoute component={Initial}/>
+      <Route component={Initial}/>
       <Route path="/jokes" component={Joke} />
+        {/* <IndexRoute component={Joke} /> */}
       {/* <Route path="/settings" component={Settings} /> */}
       {/* <Route path="/favorites" component={Favorites} /> */}
     </Route>

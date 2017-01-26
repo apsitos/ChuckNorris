@@ -11,6 +11,7 @@ export default class Main extends React.Component {
     super();
     this.state = {
       joke: '',
+      jokeArray: [],
     }
   }
 
@@ -25,6 +26,14 @@ export default class Main extends React.Component {
 
   handleClick() {
     console.log('Joke here.');
+    fetch('http://api.icndb.com/jokes/random/3')
+      .then((response) => {
+      return response.json()
+    }).then((obj) => {
+      console.log(obj);
+      obj.map((joke) => {})
+      this.setState({ jokeArray:  });
+    })
   }
 
   render() {
