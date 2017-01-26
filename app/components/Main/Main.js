@@ -32,9 +32,13 @@ export default class Main extends React.Component {
       .then((response) => {
       return response.json()
     }).then((obj) => {
-      Object.keys(obj)
-      console.log(Object.keys(obj));
-      // this.setState({ jokeArray: obj.value });
+      let singleJoke = Object.values(obj);
+      let jokes = singleJoke[1].map((funny) => {
+        return funny.joke;
+      }).splice(''); 
+      console.log(jokes);
+      this.state.jokeArray.push(jokes);
+      this.setState({ jokeArray: this.state.jokeArray });
     })
   }
 
