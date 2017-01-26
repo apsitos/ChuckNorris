@@ -1,6 +1,7 @@
 import React from 'react';
+require('./initial-style')
 
-const Initial = () => {
+export const Initial = () => {
   return (
     <div>
       <section  className="initial">
@@ -9,5 +10,3 @@ const Initial = () => {
       </section>
     </div>)
 }
-
-export default Initial;

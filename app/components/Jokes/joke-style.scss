@@ -1,0 +1,8 @@
+@import '../../styles';
+
+#display {
+  font-family: $body-font;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}

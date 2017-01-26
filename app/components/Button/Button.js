@@ -1,9 +1,9 @@
 import React from 'react';
-import './button-style';
+require('./button-style');
 
 const Button = (props) => {
   return (
-    <button onClick={() => props.handleClick()}>{props.name}</button>
+    <button id={props.id} onClick={() => props.handleClick()}>{props.name}</button>
   );
 }
 

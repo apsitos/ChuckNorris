@@ -2,13 +2,25 @@
 
 button {
   border: none;
+  border-radius: 10%;
   height: auto;
   width: auto;
   background-color: $button-color;
 }
 
+#settings {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  justify-content: center;
+  // text-align: center;
+  right: 0;
+  top: 0;
+  background-color: $button-color;
+}
+
 #retrieve {
-  width: 300px;
-  height: 100px;
-  border-radius: 25%;
+  width: 200px;
+  height: 50px;
 }

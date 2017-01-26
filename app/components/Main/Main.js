@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import Header from '../Header/Header';
 import Button from '../Button/Button';
-import Random from '../Random/Random';
 require('./main-styles');
 require('../Button/button-style')
 
