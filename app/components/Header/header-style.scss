@@ -3,7 +3,13 @@
 #header {
   background-color: $header-color;
   width: 98%;
-  height: 50%;
+  height: 200px;
+  margin: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -11,9 +17,4 @@ h1 {
   font-size: 50px;
   color: $text-color;
   text-align: center;
-}
-
-#settings {
-  border-radius: 50%;
-  background-color: $button-color;
 }

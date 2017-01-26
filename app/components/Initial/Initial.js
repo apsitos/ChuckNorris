@@ -1,9 +1,12 @@
 import React from 'react';
+require('./initial-style')
 
-const Initial = () => {
-  <div>
-    Click To Get Jokes!
-  </div>
+export const Initial = () => {
+  return (
+    <div>
+      <section  className="initial">
+
+      Click To Get Jokes!
+      </section>
+    </div>)
 }
-
-export default Initial;

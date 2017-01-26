@@ -1,12 +1,16 @@
 import React from 'react';
+import Joke from './Joke';
+require('./joke-style');
 
-const Joke = (props) => {
-  let funnies = props.jokeArray.map((singleJoke) => {console.log(props.jokeArray);})
+const Jokes = (props) => {
+  //bring jokeArray down as a prop from state above = use React.cloneElement?
+  // <Joke handleClick = props.handleClick />
   return(
     <div>
-      {funnies}
+      {props.jokeArray}
+      <Joke />
     </div>
   )
 }
 
-export default Joke;
+export default Jokes;
