@@ -1,13 +1,19 @@
 import React from 'react';
-import Joke from './Joke';
+// import Joke from './Joke';
 require('./joke-style');
 
 const Jokes = (props) => {
-  {props.jokeArray}
   // <Joke handleClick = props.handleClick />
+  const allJokes = props.jokeArray.map((jokeObj) =>
+    <div className="favorites"
+      id="display"
+      key={jokeObj.id}>
+      {jokeObj.joke}
+    </div>)
+
   return(
-    <div>
-      <Joke />
+    <div className='cards'>
+      {allJokes}
     </div>
   )
 }

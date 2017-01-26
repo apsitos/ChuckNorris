@@ -3,6 +3,10 @@
 #display {
   font-family: $body-font;
   font-size: 16px;
-  display: flex;
-  flex-direction: column;
+  background-color: $card-background;
+  max-width: 300px;
+  max-height: 150px;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
 }
