@@ -1,10 +1,11 @@
 import React from 'react';
 
 const Joke = (props) => {
-  let funnies = props.jokeArray.map((singleJoke) => {console.log(props.jokeArray);})
+  console.log(props.jokeArray);
+  // let funnies = props.jokeArray.map((singleJoke) => {console.log(props.jokeArray);})
   return(
     <div>
-      {funnies}
+      see a funny
     </div>
   )
 }
