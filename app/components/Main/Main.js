@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import Header from '../Header/Header';
 import Button from '../Button/Button';
 import Random from '../Random/Random';
-// import Jokes from '../Jokes/Jokes';
+import Jokes from '../Jokes/Jokes';
 require('./main-styles');
 require('../Button/button-style')
 
@@ -34,7 +34,6 @@ export default class Main extends React.Component {
       return response.json()
     }).then((obj) => {
       this.state.jokeArray = obj.value.map((jokeObj) => jokeObj.joke )
-
       this.setState({ jokeArray: this.state.jokeArray });
     })
   }
