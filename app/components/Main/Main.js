@@ -33,7 +33,6 @@ export default class Main extends React.Component {
       return response.json()
     }).then((obj) => {
       this.state.jokeArray = obj.value.map((jokeObj) => jokeObj.joke )
-
       this.setState({ jokeArray: this.state.jokeArray });
     })
   }
