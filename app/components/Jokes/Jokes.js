@@ -1,4 +1,5 @@
 import React from 'react';
+import Joke from './Joke';
 require('./joke-style');
 
 const Jokes = (props) => {
@@ -6,7 +7,8 @@ const Jokes = (props) => {
   // <Joke handleClick = props.handleClick />
   return(
     <div>
-      <h2 id='display'>{props.jokeArray}</h2>
+      {props.jokeArray}
+      <Joke />
     </div>
   )
 }
