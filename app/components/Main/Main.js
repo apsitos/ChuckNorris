@@ -2,10 +2,11 @@ import './reset';
 import React from 'react';
 import { Link } from 'react-router';
 import Header from '../Header/Header';
-import Initial from '../Initial/Initial';
 import Button from '../Button/Button';
-import Random from '../Random/Random'
+import Random from '../Random/Random';
+// import Jokes from '../Jokes/Jokes';
 require('./main-styles');
+require('../Button/button-style')
 
 export default class Main extends React.Component {
   constructor() {
@@ -32,12 +33,8 @@ export default class Main extends React.Component {
       .then((response) => {
       return response.json()
     }).then((obj) => {
-      let singleJoke = Object.values(obj);
-      let jokes = singleJoke[1].map((funny) => {
-        return funny.joke;
-      }).splice(''); 
-      console.log(jokes);
-      this.state.jokeArray.push(jokes);
+      this.state.jokeArray = obj.value.map((jokeObj) => jokeObj.joke )
+
       this.setState({ jokeArray: this.state.jokeArray });
     })
   }
@@ -46,8 +43,9 @@ export default class Main extends React.Component {
     this.setState({ jokeNumber: e.target.value });
   }
 
+  //if route path = '/', display <Initial />, else display {jokes}
   render() {
-    //if route path = '/', display <Initial />, else display {jokes}
+    const cloned = React.cloneElement(this.props.children, {jokeArray: this.state.jokeArray})
     return(
       <div id='container'>
         <Header />
@@ -57,8 +55,7 @@ export default class Main extends React.Component {
         </Link>
         <input type='number' value={this.state.jokeNumber} onChange={(e) => this.jokeNumber(e)}/>
         <div>
-          <Initial />
-          {this.props.children}
+          {cloned}
         </div>
       </div>
     )
