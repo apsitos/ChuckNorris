@@ -3,8 +3,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import Header from '../Header/Header';
 import Button from '../Button/Button';
-import Random from '../Random/Random';
-import Jokes from '../Jokes/Jokes';
 require('./main-styles');
 require('../Button/button-style')
 
@@ -42,7 +40,6 @@ export default class Main extends React.Component {
     this.setState({ jokeNumber: e.target.value });
   }
 
-  //if route path = '/', display <Initial />, else display {jokes}
   render() {
     const cloned = React.cloneElement(this.props.children, {jokeArray: this.state.jokeArray})
     return(
