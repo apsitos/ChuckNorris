@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Main from './components/Main/Main';
-import Initial from './components/Initial/Initial';
+import {Initial} from './components/Initial/Initial';
 import Jokes from './components/Jokes/Jokes';
 // import Settings from './components/Settings/Settings';
 // import Favorites from './components/Favorites/Favorites';

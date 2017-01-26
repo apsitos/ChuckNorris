@@ -2,6 +2,7 @@ import './reset';
 import React from 'react';
 import { Link } from 'react-router';
 import Header from '../Header/Header';
+import Random from '../Random/Random';
 import Button from '../Button/Button';
 require('./main-styles');
 require('../Button/button-style')
