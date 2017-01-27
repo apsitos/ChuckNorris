@@ -19,6 +19,4 @@ describe ('<Header/>', function() {
     expect(logStuff.calledOnce).to.equal(true);
   });
 
-  it('')
-
 });
