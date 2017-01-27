@@ -1,6 +1,6 @@
 import React from 'react';
 // import Joke from './Joke';
-require('./joke-style');
+require('./joke-style');  
 
 const Jokes = (props) => {
   // <Joke handleClick = props.handleClick />

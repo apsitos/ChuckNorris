@@ -18,4 +18,7 @@ describe ('<Header/>', function() {
     wrapper.simulate('click');
     expect(logStuff.calledOnce).to.equal(true);
   });
+
+  it('')
+
 });
