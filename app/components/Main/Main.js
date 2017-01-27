@@ -42,6 +42,7 @@ export default class Main extends React.Component {
     this.setState({ jokeNumber: e.target.value });
   }
 
+
   render() {
     const cloned = React.cloneElement(this.props.children, {jokeArray: this.state.jokeArray})
     return(
@@ -51,7 +52,7 @@ export default class Main extends React.Component {
         <Link to='/jokes'>
           <Button id='retrieve' handleClick={this.getJokes.bind(this)} name='Get Jokes'/>
         </Link>
-        <input type='number' value={this.state.jokeNumber} onChange={(e) => this.jokeNumber(e)}/>
+        <input id='number' type='number' value={this.state.jokeNumber} onChange={(e) => this.jokeNumber(e)}/>
         <div>
           {cloned}
         </div>
