@@ -2,6 +2,7 @@ import './reset';
 import React from 'react';
 import { Link } from 'react-router';
 import Header from '../Header/Header';
+import Random from '../Random/Random';
 import Button from '../Button/Button';
 require('./main-styles');
 require('../Button/button-style')
@@ -13,6 +14,8 @@ export default class Main extends React.Component {
       joke: '',
       jokeNumber: '',
       jokeArray: [],
+      firstName: '',
+      lastName: '',
     }
   }
 
@@ -31,8 +34,7 @@ export default class Main extends React.Component {
       .then((response) => {
       return response.json()
     }).then((obj) => {
-      this.state.jokeArray = obj.value.map((jokeObj) => jokeObj.joke )
-      this.setState({ jokeArray: this.state.jokeArray });
+      this.setState({ jokeArray: obj.value});
     })
   }
 
