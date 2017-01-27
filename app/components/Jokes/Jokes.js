@@ -3,7 +3,6 @@ import React from 'react';
 require('./joke-style');  
 
 const Jokes = (props) => {
-  // <Joke handleClick = props.handleClick />
   const allJokes = props.jokeArray.map((jokeObj) =>
     <div className="favorites"
       id="display"
