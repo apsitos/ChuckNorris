@@ -6,14 +6,32 @@ require('../Button/button-style');
 
 
 export default class Settings extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: ''
+    }
+  }
+
+  enterName(e) {
+    this.setState({ name: e.target.value })
+  }
+
+  submitName() {
+    
+    this.setState()
+  }
 
   render() {
     return(
       <div id="setting-form">
         <div id="set">
-          Set Name: <input type="text" />
-          <Button id="set" name="SET" />
-          <Button id="reset" name="RESET" />
+          Set Name:
+          <input type="text"
+              value={this.state.name}
+              onChange={(e) => {this.enterName(e)}}/>
+          <Button id="set" name="SET" handleClick={this.submitName.bind(this)}/>
+          <Button id="reset" name="RESET" handleClick={this.resetName.bind(this)}/>
         </div>
         <div className="controls">
           Parental Controls:
