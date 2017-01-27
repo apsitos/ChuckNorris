@@ -1,5 +1,4 @@
 import React from 'react';
-// import Joke from './Joke';
 require('./joke-style');  
 
 const Jokes = (props) => {
