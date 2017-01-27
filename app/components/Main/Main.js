@@ -14,6 +14,8 @@ export default class Main extends React.Component {
       joke: '',
       jokeNumber: '',
       jokeArray: [],
+      firstName: '',
+      lastName: '',
     }
   }
 

@@ -17,11 +17,6 @@ export default class Settings extends React.Component {
     this.setState({ name: e.target.value })
   }
 
-  submitName() {
-    
-    this.setState()
-  }
-
   render() {
     return(
       <div id="setting-form">
